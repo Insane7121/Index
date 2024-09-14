@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai University Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mumbai University Project Questionnaire</h1>
+        <form id="questionnaireForm" onsubmit="return validateForm()">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="16" max="60" required>
+            
+            <!-- University ID -->
+            <label for="universityId">University ID:</label>
+            <input type="text" id="universityId" name="universityId" placeholder="Enter your university ID" required>
+            
+            <!-- Course Selection -->
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="BSc Computer Science">BSc Computer Science</option>
+                <option value="BSc Information Technology">BSc Information Technology</option>
+                <option value="BCom">BCom</option>
+                <option value="BA">BA</option>
+            </select>
+            
+            <!-- Radio Button for Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            
+            <!-- Textarea for Project Feedback -->
+            <label for="feedback">Project Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Enter your feedback" rows="5" required></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
